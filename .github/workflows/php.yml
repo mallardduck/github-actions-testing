@@ -34,4 +34,4 @@ jobs:
           ini-values: memory_limit=512M
 
       - name: "Tests"
-        run: "php test.php '\\\\localhost'"
+        run: "php test.php '\\\\\\localhost\\'"
