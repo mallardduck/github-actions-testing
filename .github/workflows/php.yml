@@ -27,7 +27,7 @@ jobs:
         name: "Setup WSL"
 
       - name: "Check WSL"
-        run: wsl --list --verbose
+        run: wslconfig.exe /list
 
       - name: "Windows DIR"
         run: "dir \\\\wsl$"
