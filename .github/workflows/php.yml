@@ -16,8 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         php-version:
-          - "7.1"
-          - "7.4"
+          - "8.0"
         operating-system: [windows-latest]
 
     steps:
@@ -26,15 +25,6 @@ jobs:
 
       - uses: Vampire/setup-wsl@v1
         name: "Setup WSL"
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.11.0"
-        with:
-          coverage: "none"
-          php-version: "${{ matrix.php-version }}"
-          tools: pecl
-          extensions: ds,mbstring
-          ini-values: memory_limit=512M
 
       - name: "Check WSL"
         shell: wsl-bash {0}
