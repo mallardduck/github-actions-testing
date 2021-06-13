@@ -30,5 +30,9 @@ jobs:
         shell: wsl-bash {0}
         run: id
 
-      - name: "Tests"
+      - name: "Windows DIR"
+        run: "dir '\\\\\\wsl$\\Debian'"
+
+
+      - name: "PHP Test"
         run: "php test.php '\\\\\\wsl$\\Debian'"
