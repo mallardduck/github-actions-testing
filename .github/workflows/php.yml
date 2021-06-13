@@ -31,4 +31,4 @@ jobs:
         run: id
 
       - name: "Tests"
-        run: "php test.php '\\\wsl$\Debian'"
+        run: "php test.php '\\\\\\wsl$\\Debian'"
