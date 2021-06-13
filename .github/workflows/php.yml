@@ -31,8 +31,7 @@ jobs:
         run: id
 
       - name: "Windows DIR"
-        run: "dir \\\\wsl$\\Debian"
-
+        run: "dir \\\\wsl$"
 
       - name: "PHP Test"
         run: "php test.php '\\\\\\wsl$\\Debian'"
